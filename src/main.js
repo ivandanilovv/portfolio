@@ -2,8 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
-import Navbar from "./components/layout/Navbar";
-import bootstrap from './assets/scss/bootstrap.scss'
+import bootstrap from './assets/scss/app.scss'
+import fontawesome from './assets/scss/app.scss'
 
 Vue.config.productionTip = false
 
