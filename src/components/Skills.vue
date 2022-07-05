@@ -1,15 +1,15 @@
 <template>
   <section>
-    <h2 class="fw-bold headingsColor"><i class="fa fa-laptop" aria-hidden="true"></i> Skills</h2>
-    <h6 class="fst-italic greyColor">HTML5</h6>
-    <h6 class="fst-italic greyColor">CSS3</h6>
-    <h6 class="fst-italic greyColor">Bootstrap</h6>
-    <h6 class="fst-italic greyColor">Javascript</h6>
-    <h6 class="fst-italic greyColor">Vue.js</h6>
-    <h6 class="fst-italic greyColor">SQL and relational databases</h6>
-    <h6 class="fst-italic greyColor">C++</h6>
-    <h6 class="fst-italic greyColor">Git</h6>
-    <h6 class="fst-italic greyColor">Java</h6>
+    <h2 class="fw-bold headings-color"><i class="fa fa-laptop" aria-hidden="true"></i> Skills</h2>
+    <h6 class="fst-italic grey-color">HTML5</h6>
+    <h6 class="fst-italic grey-color">CSS3</h6>
+    <h6 class="fst-italic grey-color">Bootstrap</h6>
+    <h6 class="fst-italic grey-color">Javascript</h6>
+    <h6 class="fst-italic grey-color">Vue.js</h6>
+    <h6 class="fst-italic grey-color">SQL and relational databases</h6>
+    <h6 class="fst-italic grey-color">C++</h6>
+    <h6 class="fst-italic grey-color">Git</h6>
+    <h6 class="fst-italic grey-color">Java</h6>
   </section>
 </template>
 
@@ -20,10 +20,11 @@ export default {
 </script>
 
 <style scoped>
-.headingsColor{
+.headings-color {
   color: #004368;
 }
-.greyColor{
+
+.grey-color {
   color: grey;
 }
 </style>
