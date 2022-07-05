@@ -1,6 +1,8 @@
 <template>
   <section>
-    <h2 class="fw-bold headings-color"><i class="fa fa-laptop" aria-hidden="true"></i> Skills</h2>
+    <h2 class="fw-bold headings-color"><i class="fa fa-laptop" aria-hidden="true"></i>
+      Skills
+    </h2>
     <h6 class="fst-italic grey-color">HTML5</h6>
     <h6 class="fst-italic grey-color">CSS3</h6>
     <h6 class="fst-italic grey-color">Bootstrap</h6>
