@@ -14,7 +14,7 @@
           Full Stack Developer
         </h4>
       </div>
-      <div class="col-12 col-md-5 text-start d-flex flex-column justify-content-center">
+      <div class="col-12 col-md-5 text-start d-flex flex-column justify-content-center ps-3 ">
         <h3 class="fw-bold headings-color pt-3 pt-md-0">
           Contact
         </h3>
@@ -24,6 +24,14 @@
               <i :class="[contact.fontAwesomeLogo]" aria-hidden="true"></i>
             </div>
             {{ contact.text }}
+          </div>
+        </div>
+        <div v-for="contact in contactLinks">
+          <div class="d-flex flex-row info-font-size align-items-center">
+            <div class="d-flex justify-content-center">
+              <i :class="[contact.fontAwesomeLogo]" aria-hidden="true"></i>
+            </div>
+            <a :href="contact.text" target="_blank">{{contact.text}}</a>
           </div>
         </div>
       </div>
@@ -36,6 +44,7 @@ export default {
   name: "Bio",
   props: {
     contactInfo: Array,
+    contactLinks: Array,
   }
 }
 </script>
@@ -52,4 +61,12 @@ export default {
 .info-font-size {
   font-size: 20px;
 }
+a {
+  color: #b84646;
+  text-decoration: none;
+}
+a:hover{
+  color: #004368;
+}
+
 </style>

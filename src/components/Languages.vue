@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2 class="fw-bold headings-color"><i class="fa fa-language" aria-hidden="true"></i>
+    <h2 class="ps-lg-2 fw-bold headings-color"><i class="fa fa-language" aria-hidden="true"></i>
       Languages
     </h2>
     <h6 class="fst-italic grey-color">

@@ -1,6 +1,6 @@
 <template>
   <main class="container py-5">
-    <bio :contact-info="contactInfo"/>
+    <bio :contact-info="contactInfo" :contact-links="contactLinks"/>
     <detailed-info/>
   </main>
 </template>
@@ -18,28 +18,30 @@ export default {
   },
   data() {
     return {
+      contactLinks: [
+        {
+          fontAwesomeLogo: 'fs-4 pe-2 fa fa-linkedin-square font-awesome-color',
+          text: 'http://www.linkedin.com/in/ivandanilov1'
+        },
+        {
+          fontAwesomeLogo: 'fs-4 pe-2 fa fa-github font-awesome-color',
+          text: 'https://github.com/ivandanilovv'
+        }
+        ],
       contactInfo: [
         {
           fontAwesomeLogo: 'fs-5 pe-2 fa fa-phone font-awesome-color',
           text: '+389 70296123'
         },
         {
-          fontAwesomeLogo: 'fs-5 pe-2 fa fa-envelope font-awesome-color',
-          text: 'ivandanilov282@gmail.com'
-        },
-        {
-          fontAwesomeLogo: 'fs-4 pe-2 fa fa-linkedin-square font-awesome-color',
-          text: 'http://www.linkedin.com/in/ivandanilov1'
-        },
-        {
           fontAwesomeLogo: 'fs-4 pe-3 fa fa-map-marker font-awesome-color',
           text: 'Cyril and Methodius 60, 2300, Kocani(Macedonia)'
         },
         {
-          fontAwesomeLogo: 'fs-4 pe-2 fa fa-github font-awesome-color',
-          text: 'https://github.com/ivandanilovv'
+          fontAwesomeLogo: 'fs-5 pe-2 fa fa-envelope font-awesome-color',
+          text: 'ivandanilov282@gmail.com'
         }
-      ]
+        ],
     }
   }
 }

@@ -14,7 +14,6 @@
       </h5>
       <h6>{{ education.date }}</h6>
     </div>
-
   </section>
 </template>
 
