@@ -1,6 +1,6 @@
 <template>
   <main class="container py-5">
-    <bio/>
+    <bio :contact-info="contactInfo"/>
     <detailed-info/>
   </main>
 </template>
@@ -15,6 +15,32 @@ export default {
   components: {
     Bio,
     DetailedInfo
+  },
+  data() {
+    return {
+      contactInfo: [
+        {
+          fontAwesomeLogo: 'fs-5 pe-2 fa fa-phone font-awesome-color',
+          text: '+389 70296123'
+        },
+        {
+          fontAwesomeLogo: 'fs-5 pe-2 fa fa-envelope font-awesome-color',
+          text: 'ivandanilov282@gmail.com'
+        },
+        {
+          fontAwesomeLogo: 'fs-4 pe-2 fa fa-linkedin-square font-awesome-color',
+          text: 'http://www.linkedin.com/in/ivandanilov1'
+        },
+        {
+          fontAwesomeLogo: 'fs-4 pe-3 fa fa-map-marker font-awesome-color',
+          text: 'Cyril and Methodius 60, 2300, Kocani(Macedonia)'
+        },
+        {
+          fontAwesomeLogo: 'fs-4 pe-2 fa fa-github font-awesome-color',
+          text: 'https://github.com/ivandanilovv'
+        }
+      ]
+    }
   }
 }
 </script>
