@@ -9,6 +9,7 @@
       <div class="col col-md-3 text-start">
         <skills class="pt-3 ps-3 mt-2 pt-md-2 ps-md-2 mt-md-0  border border-3"/>
         <languages class="py-3 px-3 my-2 px-md-1 border border-3"/>
+        <rate class="py-3 px-3 my-2 px-md-1 border border-3"/>
       </div>
     </div>
   </div>
@@ -20,10 +21,12 @@ import AboutMe from "@/components/AboutMe";
 import Education from "@/components/Education";
 import Languages from "@/components/Languages";
 import Experience from "@/components/Experience";
+import Rate from "@/components/Rate";
 
 export default {
   name: "DetailedInfo",
   components: {
+    Rate,
     Experience,
     Skills,
     AboutMe,
