@@ -1,10 +1,14 @@
 <template>
   <section>
     <h2 class="fw-bold headings-color"><i class="fa fa-laptop" aria-hidden="true"></i>
-      Skills
+      Skills <i id="angleSkills" class="fa" :class="{'fa-angle-down' : displayBlock, 'fa-angle-up' : !displayBlock}"
+                aria-hidden="true"
+                @click="displayingSkills" @mouseover="changeCursor"></i>
     </h2>
-    <div v-for="skill in skills">
-      <h6 class="fst-italic grey-color">{{ skill }}</h6>
+    <div id="skills" :class="{'d-none' : displayBlock, 'd-block' : !displayBlock}">
+      <div v-for="skill in skills">
+        <h6 class="fst-italic grey-color">{{ skill }}</h6>
+      </div>
     </div>
   </section>
 </template>
@@ -12,9 +16,22 @@
 <script>
 export default {
   name: "Skills",
-  data(){
-    return{
-      skills: ['HTML5', 'CSS3', 'Bootstrap', 'Javascript', 'Vue.js', 'SQL and relational databases', 'C++', 'Git', 'Java']
+  data() {
+    return {
+      skills: ['HTML5', 'CSS3', 'Bootstrap', 'Javascript', 'Vue.js', 'SQL and relational databases', 'C++', 'Git', 'Java'],
+      counter: 1,
+      fontAwesomeSign: 'fa fa-angle-down',
+      displayBlock: true,
+    }
+  },
+  methods: {
+    displayingSkills() {
+      this.displayBlock = !this.displayBlock;
+      this.counter++;
+    },
+    changeCursor() {
+      let x = document.getElementById("angleSkills");
+      x.classList.add("cursorPointer");
     }
   }
 }
@@ -27,5 +44,9 @@ export default {
 
 .grey-color {
   color: grey;
+}
+
+.cursorPointer {
+  cursor: pointer;
 }
 </style>
