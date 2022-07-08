@@ -16,22 +16,23 @@
 </template>
 
 <script>
+import Rate from "@/components/Rate";
 import Skills from "@/components/Skills";
 import AboutMe from "@/components/AboutMe";
 import Education from "@/components/Education";
 import Languages from "@/components/Languages";
 import Experience from "@/components/Experience";
-import Rate from "@/components/Rate";
+
 
 export default {
   name: "DetailedInfo",
   components: {
     Rate,
-    Experience,
     Skills,
     AboutMe,
     Education,
-    Languages
+    Languages,
+    Experience
   }
 }
 </script>

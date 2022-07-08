@@ -1,9 +1,13 @@
 <template>
   <section>
-    <h2 class="fw-bold headings-color"><i class="fa fa-laptop" aria-hidden="true"></i>
-      Skills <i id="angleSkills" class="fa" :class="{'fa-angle-down' : displayBlock, 'fa-angle-up' : !displayBlock}"
-                aria-hidden="true"
-                @click="displayingSkills" @mouseover="hover = true"></i>
+    <h2 class="fw-bold headings-color"
+        @click="displayingSkills"
+        @mouseover="hover = true">
+      <i class="fa fa-laptop" aria-hidden="true"></i>
+      Skills
+      <i id="angleSkills" class="fa" :class="{'fa-angle-down' : displayBlock, 'fa-angle-up' : !displayBlock}"
+                aria-hidden="true">
+      </i>
     </h2>
     <div id="skills" :class="{'d-none' : displayBlock, 'd-block' : !displayBlock}">
       <div v-for="skill in skills">
@@ -19,7 +23,6 @@ export default {
   data() {
     return {
       skills: ['HTML5', 'CSS3', 'Bootstrap', 'Javascript', 'Vue.js', 'SQL and relational databases', 'C++', 'Git', 'Java'],
-      counter: 1,
       fontAwesomeSign: 'fa fa-angle-down',
       displayBlock: true,
     }
@@ -27,7 +30,6 @@ export default {
   methods: {
     displayingSkills() {
       this.displayBlock = !this.displayBlock;
-      this.counter++;
     }
   }
 }
@@ -42,7 +44,7 @@ export default {
   color: grey;
 }
 
-#angleSkills:hover{
+h2:hover {
   cursor: pointer;
 }
 </style>

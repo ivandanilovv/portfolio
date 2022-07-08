@@ -5,8 +5,7 @@
       About me
     </h2>
     <h5>I am student at 3rd year at the Faculty of Computer Science and Engineering and I am highly motivated to
-      learn new technologies and to become extraordinary full stack
-      developer.
+      learn new technologies and to become extraordinary full stack developer.
     </h5>
   </section>
 </template>

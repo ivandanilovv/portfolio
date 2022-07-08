@@ -1,20 +1,28 @@
 <template>
   <section>
-    <h3 class="fw-bold headings-color px-2"><i class="fa fa-star" aria-hidden="true"></i>
+    <h3 class="fw-bold headings-color px-2">
+      <i class="fa fa-star" aria-hidden="true"></i>
       Rate my portfolio
     </h3>
-    <h5 class="descriptionColor text-center">Leave a rating from 1 to 5</h5>
+    <h5 class="description-color text-center">
+      Leave a rating from 1 to 5
+    </h5>
     <div class="px-2 text-center">
       <p class="fs-4">
-        <button class="btn fs-4" @click="decreaseRating"><i class="fa fa-minus-square headings-color"
-                                                            aria-hidden="true"></i></button>
-        {{ rating }}
-        <button class="btn fs-4" @click="increaseRating"><i class="fa fa-plus-square headings-color"
-                                                            aria-hidden="true"></i></button>
+        <button class="btn fs-4" @click="decreaseRating">
+          <i class="fa fa-minus-square headings-color" aria-hidden="true"></i>
+        </button>
+        <span class="fs-2 fw-bold description-color">{{ rating }}</span>
+        <button class="btn fs-4" @click="increaseRating">
+          <i class="fa fa-plus-square headings-color" aria-hidden="true"></i>
+        </button>
         <br/>
-        <button class="btn btn-info fs-5" @click="submitRating">Submit</button>
+        <button class="btn btn-info fs-5" @click="submitRating">
+          Submit
+        </button>
       </p>
-      <div class="averageRatingMessageFontSize descriptionColor" v-if="averageRating>0">Average rating is:
+      <div class="average-rating-message-font-size description-color" v-if="averageRating>0">
+        Average rating is:
         <span v-if="!isNaN(averageRating)">{{ averageRating.toFixed(2) }}
           <span v-for="index in Math.floor(averageRating)">
             <i class="fa fa-star" aria-hidden="true"></i>
@@ -37,8 +45,8 @@ export default {
   data() {
     return {
       rating: 1,
+      sumOfReviews: 0,
       numberOfReviews: 0,
-      sumOfReviews: 0
     }
   },
   methods: {
@@ -74,10 +82,10 @@ export default {
   color: #004368;
 }
 
-.descriptionColor {
+.description-color {
   color: #b84646;
 }
-.averageRatingMessageFontSize{
+.average-rating-message-font-size{
   font-size: 1.17rem;
 }
 </style>

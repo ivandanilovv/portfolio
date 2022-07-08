@@ -24,14 +24,19 @@ export default {
     return {
       educationHistory: [
         {
+          school: 'Faculty of Computer Science and Engineering - Skopje',
+          title: 'Computer Science',
+          date: 'October, 2019 - Present'
+        },
+        {
           school: 'Goso Vikentiev - Kocani',
           title: 'Electrical technician for computer science and automation',
           date: 'September, 2015 - June, 2019'
         },
         {
-          school: 'Faculty of Computer Science and Engineering - Skopje',
-          title: 'Computer Science',
-          date: 'October, 2019 - Present'
+          school: 'Ss. Cyril and Methodius- Kocani',
+          title: 'Primary School',
+          date: 'September, 2007 - June, 2015'
         }
       ]
     }
