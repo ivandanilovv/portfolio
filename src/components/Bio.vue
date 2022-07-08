@@ -6,7 +6,7 @@
           <img src="../assets/images/tablo_resized.jpg" alt="Profle image">
         </div>
       </div>
-      <div class="col-10 col-md-3 align-bottom d-flex flex-column justify-content-center">
+      <div class="col-10 col-md-3 align-bottom d-flex flex-column justify-content-center ps-5 mx-5 custom-border">
         <h2 class="fw-bold headings-color">
           Ivan Danilov
         </h2>
@@ -14,7 +14,7 @@
           Full Stack Developer
         </h4>
       </div>
-      <div class="col-12 col-md-5 text-start d-flex flex-column justify-content-center ps-3 ">
+      <div class="col-12 col-md-5 text-start d-flex flex-column justify-content-center ps-5 custom-border">
         <h3 class="fw-bold headings-color pt-3 pt-md-0">
           Contact
         </h3>
@@ -83,6 +83,10 @@ a:hover {
 
 .font-awesome-rotate:hover {
   transform: rotate(-15deg);
+}
+
+.custom-border{
+  border-left: 4px solid #b84646;
 }
 
 </style>

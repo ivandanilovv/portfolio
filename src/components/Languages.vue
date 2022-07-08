@@ -31,7 +31,7 @@ export default {
     return {
       progressBarLanguages: [
         {
-          languageName: 'Macedonian(Native)',
+          languageName: 'Macedonian',
           progressBarWidth: '100%',
           progressBarDescription: 'Native'
         },

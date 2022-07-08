@@ -1,5 +1,5 @@
 <template>
-  <main class="container py-5">
+  <main class="container py-5 bg-color">
     <bio :contact-info="contactInfo" :contact-links="contactLinks"/>
     <detailed-info/>
   </main>
@@ -47,5 +47,7 @@ export default {
 }
 </script>
 <style scoped>
-
+.bg-color{
+  background-color: #d7dde4;
+}
 </style>
