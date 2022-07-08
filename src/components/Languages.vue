@@ -4,8 +4,7 @@
         @click="displayingLanguages"
         @mouseover="hover = true">
       <i class="fa fa-language" aria-hidden="true"></i>
-      Languages
-      <i id="angle" class="fa " :class="{'fa-angle-down' : displayBlock, 'fa-angle-up' : !displayBlock}"
+      Languages<i id="angle" class="fa ps-2 ps-md-0 ps-lg-2" :class="{'fa-angle-down' : displayBlock, 'fa-angle-up' : !displayBlock}"
                    aria-hidden="true">
       </i>
     </h2>
