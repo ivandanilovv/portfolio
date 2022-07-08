@@ -30,7 +30,7 @@ export default {
         ],
       contactInfo: [
         {
-          fontAwesomeLogo: 'fs-5 pe-2 fa fa-phone font-awesome-color',
+          fontAwesomeLogo: 'fs-5 pe-2 fa fa-phone-square font-awesome-color',
           text: '+389 70296123'
         },
         {

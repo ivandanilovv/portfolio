@@ -1,8 +1,8 @@
 <template>
   <section>
     <h2 class="ps-lg-2 fw-bold headings-color"><i class="fa fa-language" aria-hidden="true"></i>
-      Languages <i id="angle" class="fa" :class="{'fa-angle-down' : displayBlock, 'fa-angle-up' : !displayBlock}"
-                   aria-hidden="true" @click="displayingLanguages" @mouseover="changeCursor"></i>
+      Languages <i id="angle" class="fa " :class="{'fa-angle-down' : displayBlock, 'fa-angle-up' : !displayBlock}"
+                   aria-hidden="true" @click="displayingLanguages" @mouseover="hover = true"></i>
     </h2>
     <div id="languages" :class="{'d-none' : displayBlock, 'd-block' : !displayBlock}">
       <div v-for="language in progressBarLanguages">
@@ -43,10 +43,6 @@ export default {
   methods: {
     displayingLanguages() {
       this.displayBlock = !this.displayBlock
-    },
-    changeCursor(){
-      let x = document.getElementById("angle");
-      x.classList.add("cursorPointer");
     }
   },
   computed: {},
@@ -66,7 +62,8 @@ export default {
 .headings-color {
   color: #004368;
 }
-.cursorPointer{
+
+#angle:hover {
   cursor: pointer;
 }
 </style>

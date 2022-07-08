@@ -20,18 +20,20 @@
         </h3>
         <div v-for="contact in contactInfo">
           <div class="d-flex flex-row info-font-size align-items-center">
-            <div class="d-flex justify-content-center">
-              <i :class="[contact.fontAwesomeLogo]" aria-hidden="true"></i>
+            <div class="d-flex justify-content-center font-awesome-scale">
+              <i class="font-awesome-rotate" :class="[contact.fontAwesomeLogo]" aria-hidden="true"
+                 @mouseover="hover = true"></i>
             </div>
             {{ contact.text }}
           </div>
         </div>
         <div v-for="contact in contactLinks">
           <div class="d-flex flex-row info-font-size align-items-center">
-            <div class="d-flex justify-content-center">
-              <i :class="[contact.fontAwesomeLogo]" aria-hidden="true"></i>
+            <div class="d-flex justify-content-center font-awesome-scale">
+              <i class="font-awesome-rotate" :class="[contact.fontAwesomeLogo]" aria-hidden="true"
+                 @mouseover="hover = true"></i>
             </div>
-            <a :href="contact.text" target="_blank">{{contact.text}}</a>
+            <a :href="contact.text" target="_blank">{{ contact.text }}</a>
           </div>
         </div>
       </div>
@@ -50,7 +52,11 @@ export default {
 </script>
 
 <style scoped>
-.headings-color, .font-awesome-color {
+.headings-color {
+  color: #004368;
+}
+
+.font-awesome-color {
   color: #004368;
 }
 
@@ -61,12 +67,22 @@ export default {
 .info-font-size {
   font-size: 20px;
 }
+
 a {
   color: #b84646;
   text-decoration: none;
 }
-a:hover{
+
+a:hover {
   color: #004368;
+}
+
+.font-awesome-scale:hover {
+  transform: scale(1.7);
+}
+
+.font-awesome-rotate:hover {
+  transform: rotate(-15deg);
 }
 
 </style>

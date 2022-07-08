@@ -3,7 +3,7 @@
     <h2 class="fw-bold headings-color"><i class="fa fa-laptop" aria-hidden="true"></i>
       Skills <i id="angleSkills" class="fa" :class="{'fa-angle-down' : displayBlock, 'fa-angle-up' : !displayBlock}"
                 aria-hidden="true"
-                @click="displayingSkills" @mouseover="changeCursor"></i>
+                @click="displayingSkills" @mouseover="hover = true"></i>
     </h2>
     <div id="skills" :class="{'d-none' : displayBlock, 'd-block' : !displayBlock}">
       <div v-for="skill in skills">
@@ -28,10 +28,6 @@ export default {
     displayingSkills() {
       this.displayBlock = !this.displayBlock;
       this.counter++;
-    },
-    changeCursor() {
-      let x = document.getElementById("angleSkills");
-      x.classList.add("cursorPointer");
     }
   }
 }
@@ -46,7 +42,7 @@ export default {
   color: grey;
 }
 
-.cursorPointer {
+#angleSkills:hover{
   cursor: pointer;
 }
 </style>
