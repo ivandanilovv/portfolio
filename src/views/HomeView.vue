@@ -1,7 +1,9 @@
 <template>
-  <main class="container py-5 bg-color">
+  <main class="container pt-5 bg-color">
     <bio :contact-info="contactInfo" :contact-links="contactLinks"/>
     <detailed-info/>
+    <hr/>
+    <my-footer/>
   </main>
 </template>
 
@@ -9,10 +11,12 @@
 // @ is an alias to /src
 import Bio from "@/components/Bio";
 import DetailedInfo from "@/components/DetailedInfo";
+import MyFooter from "@/components/MyFooter";
 
 export default {
   name: 'HomeView',
   components: {
+    MyFooter,
     Bio,
     DetailedInfo
   },
