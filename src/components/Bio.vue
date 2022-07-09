@@ -6,15 +6,15 @@
           <img src="../assets/images/tablo_resized.jpg" alt="Profle image">
         </div>
       </div>
-      <div class="col-10 col-md-3 align-bottom d-flex flex-column justify-content-center ps-5 mx-5 custom-border">
-        <h2 class="fw-bold headings-color">
+      <div class="col-10 col-md-3 align-bottom d-flex flex-column justify-content-center">
+        <h2 class="fw-bold headings-color pt-2 pt-sm-0">
           Ivan Danilov
         </h2>
         <h4 class="job-title-color">
           Full Stack Developer
         </h4>
       </div>
-      <div class="col-12 col-md-5 text-start d-flex flex-column justify-content-center ps-5 custom-border">
+      <div class="col-12 col-md-5 text-start d-flex flex-column justify-content-center">
         <h3 class="fw-bold headings-color pt-3 pt-md-0">
           Contact
         </h3>

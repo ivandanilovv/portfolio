@@ -1,7 +1,7 @@
 <template>
   <section>
-    <h3 class="fw-bold headings-color px-2">
-      <i class="fa fa-star" aria-hidden="true"></i>
+    <h3 class="fw-bold headings-color px-2 d-flex flex-nowrap align-items-center ps-sm-0 ps-md-2">
+      <i class="fa fa-star pe-2" aria-hidden="true"></i>
       Rate my portfolio
     </h3>
     <h5 class="description-color text-center">

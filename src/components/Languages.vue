@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2 class="ps-lg-2 fw-bold headings-color d-flex flex-nowrap align-items-center"
+    <h2 class="ps-lg-2 pt-2 fw-bold headings-color d-flex flex-nowrap align-items-center"
         @click="displayingLanguages"
         @mouseover="hover = true">
       <i class="fa fa-language pe-2" aria-hidden="true"></i>

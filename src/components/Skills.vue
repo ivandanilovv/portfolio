@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h2 class="fw-bold headings-color"
+    <h2 class="fw-bold headings-color pb-1"
         @click="displayingSkills"
         @mouseover="hover = true">
       <i class="fa fa-laptop" aria-hidden="true"></i>
