@@ -1,12 +1,12 @@
 <template>
   <section>
     <h2 class="fw-bold headings-color">
-      <i class="fa fa-certificate" aria-hidden="true"></i>
+      <i class="fa fa-certificate" aria-hidden="true"/>
       Experience
     </h2>
     <div v-for="exp in experience">
-      <h5 class="fw-bold schools-color">
-        <i class="fa fa-university" aria-hidden="true"></i>
+      <h5 class="fw-bold description-color">
+        <i class="fa fa-university" aria-hidden="true"/>
         {{ exp.companyName }}
       </h5>
       <h5 class="fst-italic grey-color">
@@ -35,12 +35,6 @@ export default {
 </script>
 
 <style scoped>
-.headings-color {
-  color: #004368;
-}
-.schools-color{
-  color: #b84646;
-}
 .grey-color{
   color: grey;
 }

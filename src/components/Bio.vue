@@ -22,7 +22,7 @@
           <div class="d-flex flex-row info-font-size align-items-center">
             <div class="d-flex justify-content-center font-awesome-scale">
               <i class="font-awesome-rotate" :class="[contact.fontAwesomeLogo]" aria-hidden="true"
-                 @mouseover="hover = true"></i>
+                 @mouseover="hover = true"/>
             </div>
             {{ contact.text }}
           </div>
@@ -31,7 +31,7 @@
           <div class="d-flex flex-row info-font-size align-items-center">
             <div class="d-flex justify-content-center font-awesome-scale">
               <i class="font-awesome-rotate" :class="[contact.fontAwesomeLogo]" aria-hidden="true"
-                 @mouseover="hover = true"></i>
+                 @mouseover="hover = true"/>
             </div>
             <a :href="contact.text" target="_blank">{{ contact.text }}</a>
           </div>
@@ -52,21 +52,6 @@ export default {
 </script>
 
 <style scoped>
-.headings-color {
-  color: #004368;
-}
-
-.font-awesome-color {
-  color: #004368;
-}
-
-.job-title-color {
-  color: #b84646;
-}
-
-.info-font-size {
-  font-size: 20px;
-}
 
 a {
   color: #b84646;
@@ -77,6 +62,10 @@ a:hover {
   color: #004368;
 }
 
+.font-awesome-color {
+  color: #004368;
+}
+
 .font-awesome-scale:hover {
   transform: scale(1.7);
 }
@@ -84,9 +73,15 @@ a:hover {
 .font-awesome-rotate:hover {
   transform: rotate(-15deg);
 }
+.job-title-color {
+  color: #b84646;
+}
+
+.info-font-size {
+  font-size: 20px;
+}
 
 .custom-border{
   border-left: 4px solid #b84646;
 }
-
 </style>

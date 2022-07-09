@@ -3,10 +3,9 @@
     <h2 class="ps-lg-2 pt-2 fw-bold headings-color d-flex flex-nowrap align-items-center"
         @click="displayingLanguages"
         @mouseover="hover = true">
-      <i class="fa fa-language pe-2" aria-hidden="true"></i>
+      <i class="fa fa-language pe-2" aria-hidden="true"/>
       Languages<i id="angle" class="fa ps-2 ps-md-0 ps-lg-2" :class="{'fa-angle-down' : displayBlock, 'fa-angle-up' : !displayBlock}"
-                   aria-hidden="true">
-      </i>
+                   aria-hidden="true"/>
     </h2>
     <div id="languages" :class="{'d-none' : displayBlock, 'd-block' : !displayBlock}">
       <div v-for="language in progressBarLanguages">
@@ -15,7 +14,8 @@
         </h6>
         <div class="progress">
           <div class="progress-bar progress-bar-color" role="progressbar"
-               :style="{width: language.progressBarWidth}" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+               :style="{width: language.progressBarWidth}"
+               aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
             {{ language.progressBarDescription }}
           </div>
         </div>
@@ -56,16 +56,11 @@ export default {
 
 <style scoped>
 .progress-bar-color {
-  /*background-color: #b84646;*/
   background: linear-gradient(45deg, #e3a39e, #b84646);
 }
 
 .grey-color {
   color: grey;
-}
-
-.headings-color {
-  color: #004368;
 }
 
 h2:hover {

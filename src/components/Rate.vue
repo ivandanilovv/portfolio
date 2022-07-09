@@ -1,7 +1,7 @@
 <template>
   <section>
-    <h3 class="fw-bold headings-color px-2 d-flex flex-nowrap align-items-center ps-sm-0 ps-md-2">
-      <i class="fa fa-star pe-2" aria-hidden="true"></i>
+    <h3 class="px-2 ps-sm-0 ps-md-2 fw-bold headings-color d-flex flex-nowrap align-items-center">
+      <i class="fa fa-star pe-2" aria-hidden="true"/>
       Rate my portfolio
     </h3>
     <h5 class="description-color text-center">
@@ -10,28 +10,31 @@
     <div class="px-2 text-center">
       <p class="fs-4">
         <button class="btn fs-4" @click="decreaseRating">
-          <i class="fa fa-minus-square headings-color" aria-hidden="true"></i>
+          <i class="fa fa-minus-square headings-color" aria-hidden="true"/>
         </button>
         <span class="fs-2 fw-bold description-color">{{ rating }}</span>
         <button class="btn fs-4" @click="increaseRating">
-          <i class="fa fa-plus-square headings-color" aria-hidden="true"></i>
+          <i class="fa fa-plus-square headings-color" aria-hidden="true"/>
         </button>
         <br/>
         <button class="btn btn-info fs-5" @click="submitRating">
           Submit
         </button>
       </p>
+      <!-- The average rating will be shown only when there is at least 1 rating submitted -->
       <div class="average-rating-message-font-size description-color" v-if="averageRating>0">
         Average rating is:
         <span v-if="!isNaN(averageRating)">{{ averageRating.toFixed(2) }}
+          <!-- Number of full stars shown -->
           <span v-for="index in Math.floor(averageRating)">
-            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"/>
           </span>
           <span v-if="averageRating*100%100>0">
-            <i class="fa fa-star-half-o" aria-hidden="true"></i>
+            <i class="fa fa-star-half-o" aria-hidden="true"/>
           </span>
+          <!-- Number of empty stars shown -->
           <span v-for="index in 5-Math.ceil(averageRating)">
-            <i class="fa fa-star-o" aria-hidden="true"></i>
+            <i class="fa fa-star-o" aria-hidden="true"/>
           </span>
         </span>
       </div>
@@ -51,15 +54,15 @@ export default {
   },
   methods: {
     increaseRating() {
-      if (this.rating + 1 > 5) {
+      if (this.rating + 1 > 5)
         alert("Rating can't be greater than 5!")
-      } else
+      else
         this.rating++;
     },
     decreaseRating() {
-      if (this.rating - 1 < 1) {
+      if (this.rating - 1 < 1)
         alert("Rating can't be less than 1!")
-      } else
+      else
         this.rating--;
     },
     submitRating() {
@@ -78,13 +81,6 @@ export default {
 </script>
 
 <style scoped>
-.headings-color {
-  color: #004368;
-}
-
-.description-color {
-  color: #b84646;
-}
 .average-rating-message-font-size{
   font-size: 1.17rem;
 }

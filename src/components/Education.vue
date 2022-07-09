@@ -1,12 +1,12 @@
 <template>
   <section>
     <h2 class="fw-bold headings-color">
-      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+      <i class="fa fa-graduation-cap" aria-hidden="true"/>
       Education
     </h2>
-    <div v-for="education in educationHistory" >
-      <h5 class="fw-bold schools-color">
-        <i class="fa fa-university" aria-hidden="true"></i>
+    <div v-for="education in educationHistory">
+      <h5 class="fw-bold description-color">
+        <i class="fa fa-university" aria-hidden="true"/>
         {{ education.school }}
       </h5>
       <h5 class="fst-italic grey-color">
@@ -20,7 +20,7 @@
 <script>
 export default {
   name: "Education",
-  data () {
+  data() {
     return {
       educationHistory: [
         {
@@ -45,13 +45,6 @@ export default {
 </script>
 
 <style scoped>
-.headings-color {
-  color: #004368;
-}
-
-.schools-color {
-  color: #b84646;
-}
 
 .grey-color {
   color: grey;

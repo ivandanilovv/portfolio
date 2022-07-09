@@ -3,15 +3,19 @@
     <h2 class="fw-bold headings-color pb-1"
         @click="displayingSkills"
         @mouseover="hover = true">
-      <i class="fa fa-laptop" aria-hidden="true"></i>
+      <i class="fa fa-laptop" aria-hidden="true"/>
       Skills
-      <i id="angleSkills" class="fa" :class="{'fa-angle-down' : displayBlock, 'fa-angle-up' : !displayBlock}"
-                aria-hidden="true">
-      </i>
+      <i id="angleSkills" class="fa"
+         :class="{'fa-angle-down' : displayBlock, 'fa-angle-up' : !displayBlock}"
+         aria-hidden="true"/>
     </h2>
     <div id="skills" :class="{'d-none' : displayBlock, 'd-block' : !displayBlock}">
-      <div v-for="skill in skills">
-        <h6 class="fst-italic grey-color">{{ skill }}</h6>
+      <div class="row">
+        <div v-for="skill in skills" class="col-6 col-md-12">
+          <h6 class="fst-italic grey-color">
+            {{ skill }}
+          </h6>
+        </div>
       </div>
     </div>
   </section>
@@ -22,8 +26,17 @@ export default {
   name: "Skills",
   data() {
     return {
-      skills: ['HTML5', 'CSS3', 'Bootstrap', 'Javascript', 'Vue.js', 'SQL and relational databases', 'C++', 'Git', 'Java'],
-      fontAwesomeSign: 'fa fa-angle-down',
+      skills: [
+        'HTML5',
+        'CSS3',
+        'Bootstrap',
+        'Javascript',
+        'Vue.js',
+        'C++',
+        'Git',
+        'Java',
+        'SQL and relational databases',
+      ],
       displayBlock: true,
     }
   },
@@ -36,9 +49,6 @@ export default {
 </script>
 
 <style scoped>
-.headings-color {
-  color: #004368;
-}
 
 .grey-color {
   color: grey;

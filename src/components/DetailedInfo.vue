@@ -2,14 +2,14 @@
   <div class="pt-sm-4">
     <div class="row">
       <div class="col-12 col-md-8 text-start">
-        <about-me class="py-2 mt-3 mt-sm-0 ps-3 custom-border"/>
-        <education class="pt-3 ps-3 mt-2 pt-md-2 custom-border"/>
+        <about-me class="py-2 ps-3 mt-sm-0 mt-3 custom-border"/>
+        <education class="pt-3 ps-3 pt-md-2 mt-2 custom-border"/>
         <experience class="pt-2 pt-md-2 ps-3 mt-2 custom-border"/>
       </div>
       <div class="col col-md-4 text-start">
-        <skills class="pt-3 ps-3 mt-2 pt-md-2 ps-md-2 mt-md-0 custom-border"/>
-        <languages class="py-2 px-3 my-2 px-md-1 custom-border"/>
-        <rate class="py-3 px-3 my-2 px-md-1 custom-border"/>
+        <skills class="pt-3 ps-3 pt-md-2 ps-md-2 mt-2 mt-md-0 custom-border"/>
+        <languages class="py-2 px-3 px-md-1 my-2 custom-border"/>
+        <rate class="py-3 px-3 px-md-1 my-2 custom-border"/>
       </div>
     </div>
   </div>

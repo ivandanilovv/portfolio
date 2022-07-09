@@ -1,7 +1,7 @@
 <template>
   <section>
     <h2 class="fw-bold headings-color">
-      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+      <i class="fa fa-user-circle-o" aria-hidden="true"/>
       About me
     </h2>
     <h5>I am student at 3rd year at the Faculty of Computer Science and Engineering and I am highly motivated to
@@ -17,7 +17,4 @@ export default {
 </script>
 
 <style scoped>
-.headings-color {
-  color: #004368;
-}
 </style>
