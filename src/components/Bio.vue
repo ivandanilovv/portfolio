@@ -3,7 +3,7 @@
     <div class="row text-start">
       <div class="col-2 d-flex flex-column justify-content-center">
         <div class="ratio ratio-2x3">
-          <img src="../assets/images/tablo_resized.jpg" alt="Profle image">
+          <img src="../assets/images/profile-picture.webp" alt="Profle image">
         </div>
       </div>
       <div class="col-10 col-md-3 align-bottom d-flex flex-column justify-content-center">
