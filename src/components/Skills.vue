@@ -5,13 +5,13 @@
         @mouseover="hover = true">
       <i class="fa fa-laptop" aria-hidden="true"/>
       Skills
-      <i id="angleSkills" class="fa"
+      <i class="fa"
          :class="{'fa-angle-down' : displayBlock, 'fa-angle-up' : !displayBlock}"
          aria-hidden="true"/>
     </h2>
-    <div id="skills" :class="{'d-none' : displayBlock, 'd-block' : !displayBlock}">
+    <div :class="{'d-none' : displayBlock, 'd-block' : !displayBlock}">
       <div class="row">
-        <div v-for="skill in skills" class="col-6 col-md-12">
+        <div v-for="skill in skills" class="col-6">
           <h6 class="fst-italic grey-color">
             {{ skill }}
           </h6>
@@ -36,6 +36,7 @@ export default {
         'Git',
         'Java',
         'SQL and relational databases',
+        'Django',
       ],
       displayBlock: true,
     }
