@@ -12,7 +12,9 @@
       <h5 class="fst-italic grey-color">
         {{ exp.jobTitle }}
       </h5>
-      <h6>{{ exp.date }}</h6>
+      <h6>
+        {{ exp.date }}
+      </h6>
     </div>
   </section>
 </template>

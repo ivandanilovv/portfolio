@@ -4,8 +4,9 @@
         @click="displayingLanguages"
         @mouseover="hover = true">
       <i class="fa fa-language pe-2" aria-hidden="true"/>
-      Languages<i id="angle" class="fa ps-2 ps-md-0 ps-lg-2" :class="{'fa-angle-down' : displayBlock, 'fa-angle-up' : !displayBlock}"
-                   aria-hidden="true"/>
+      Languages<i id="angle" class="fa ps-2 ps-md-0 ps-lg-2"
+                  :class="{'fa-angle-down' : displayBlock, 'fa-angle-up' : !displayBlock}"
+                  aria-hidden="true"/>
     </h2>
     <div id="languages" :class="{'d-none' : displayBlock, 'd-block' : !displayBlock}">
       <div v-for="language in progressBarLanguages">

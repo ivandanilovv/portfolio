@@ -12,7 +12,9 @@
       <h5 class="fst-italic grey-color">
         {{ education.title }}
       </h5>
-      <h6>{{ education.date }}</h6>
+      <h6>
+        {{ education.date }}
+      </h6>
     </div>
   </section>
 </template>

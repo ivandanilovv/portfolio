@@ -17,7 +17,4 @@ export default {
 </script>
 
 <style scoped>
-.custom-border {
-  border-top: 3px solid #b84646;
-}
 </style>

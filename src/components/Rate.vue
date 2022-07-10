@@ -12,7 +12,9 @@
         <button class="btn fs-4" @click="decreaseRating">
           <i class="fa fa-minus-square headings-color" aria-hidden="true"/>
         </button>
-        <span class="fs-2 fw-bold description-color">{{ rating }}</span>
+        <span class="fs-2 fw-bold description-color">
+          {{ rating }}
+        </span>
         <button class="btn fs-4" @click="increaseRating">
           <i class="fa fa-plus-square headings-color" aria-hidden="true"/>
         </button>

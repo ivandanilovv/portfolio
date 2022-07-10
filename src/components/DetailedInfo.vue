@@ -29,13 +29,13 @@ import Achievements from "@/components/Achievements";
 export default {
   name: "DetailedInfo",
   components: {
-    Achievements,
     Rate,
     Skills,
     AboutMe,
     Education,
     Languages,
-    Experience
+    Experience,
+    Achievements,
   }
 }
 </script>

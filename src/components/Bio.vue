@@ -10,7 +10,7 @@
         <h2 class="fw-bold headings-color pt-2 pt-sm-0">
           Ivan Danilov
         </h2>
-        <h4 class="job-title-color">
+        <h4 class="description-color">
           Full Stack Developer
         </h4>
       </div>
@@ -21,7 +21,8 @@
         <div v-for="contact in contactInfo">
           <div class="d-flex flex-row info-font-size align-items-center">
             <div class="d-flex justify-content-center font-awesome-scale">
-              <i class="font-awesome-rotate" :class="[contact.fontAwesomeLogo]" aria-hidden="true"
+              <i class="font-awesome-rotate"
+                 :class="[contact.fontAwesomeLogo]" aria-hidden="true"
                  @mouseover="hover = true"/>
             </div>
             {{ contact.text }}
@@ -30,10 +31,13 @@
         <div v-for="contact in contactLinks">
           <div class="d-flex flex-row info-font-size align-items-center">
             <div class="d-flex justify-content-center font-awesome-scale">
-              <i class="font-awesome-rotate" :class="[contact.fontAwesomeLogo]" aria-hidden="true"
+              <i class="font-awesome-rotate"
+                 :class="[contact.fontAwesomeLogo]" aria-hidden="true"
                  @mouseover="hover = true"/>
             </div>
-            <a :href="contact.text" target="_blank">{{ contact.text }}</a>
+            <a :href="contact.text" target="_blank">
+              {{ contact.text }}
+            </a>
           </div>
         </div>
       </div>
@@ -73,12 +77,9 @@ a:hover {
 .font-awesome-rotate:hover {
   transform: rotate(-15deg);
 }
-.job-title-color {
-  color: #b84646;
-}
 
 .info-font-size {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .custom-border{
