@@ -9,6 +9,7 @@
       <div class="col col-md-4 text-start">
         <skills class="pt-3 ps-3 pt-md-2 ps-md-2 mt-2 mt-md-0 custom-border"/>
         <languages class="py-2 px-3 px-md-1 my-2 custom-border"/>
+        <achievements class="py-2 px-3 pt-3 px-md-1 my-2 custom-border"/>
         <rate class="py-3 px-3 px-md-1 my-2 custom-border"/>
       </div>
     </div>
@@ -22,11 +23,13 @@ import AboutMe from "@/components/AboutMe";
 import Education from "@/components/Education";
 import Languages from "@/components/Languages";
 import Experience from "@/components/Experience";
+import Achievements from "@/components/Achievements";
 
 
 export default {
   name: "DetailedInfo",
   components: {
+    Achievements,
     Rate,
     Skills,
     AboutMe,

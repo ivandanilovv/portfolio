@@ -1,5 +1,5 @@
 <template>
-  <section class="pb-3">
+  <section class="pb-2">
     <div class="d-flex justify-content-center">
       <h6 class="headings-color">
         Copyright
